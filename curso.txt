@@ -1,0 +1,2953 @@
+Hola, soy Alain Nicolás Tello, creador de cursos online y en este curso gratuito vas a crear tu primera
+
+aplicación de Android profesional usando Kotlin Jetpack, Compose y Retrofit.
+
+Este es un curso moderno, funcional y completamente práctico, pensado para que en menos de dos horas
+
+logres resultados reales y tangibles.
+
+Este será un curso intensivo, así que el ritmo será rápido y directo.
+
+Al grano.
+
+No entraremos a fondo en teoría, pero irás entendiendo los conceptos mientras construimos la aplicación
+
+final paso a paso.
+
+Si hay algo que no entiendas de Kotlin, no te preocupes.
+
+Dentro del curso encontrarás información para tomar mi curso gratuito de Kotlin básico compatible con
+
+este curso y luego podrás continuar con el de Android.
+
+Aquí todo gira en torno a la práctica.
+
+Diseñaremos con Jetpack Compose, consumiremos datos de una API real de Internet con Retrofit y construiremos
+
+una aplicación completa lista para mostrar en tu portafolio.
+
+No usaremos XML, Java ni nada antiguo, solo Kotlin moderno tanto para la lógica como para el diseño.
+
+Este curso fue diseñado especialmente para principiantes o personas con poca experiencia que quieren
+
+dar su primer paso sólido en el desarrollo de Android.
+
+Al finalizar, tendrás una aplicación real y funcional, además de una pequeña autoevaluación para que
+
+midas tus avances y veas todo lo que lograste en tan poco tiempo.
+
+Seré honesto, si te gusta la experiencia y quieres seguir creciendo, al final te dejaré una invitación
+
+con contenido exclusivo donde podrás profundizar más y dominar Android de forma profesional.
+
+Así que prepárate para un curso rápido, moderno y divertido en menos de dos horas.
+
+Vas a descubrir que sí puedes crear tu primera aplicación de Android.
+
+Nos vemos en clase!  
+Requisitos del curso
+¿Qué necesitas para tomar este curso?
+Hardware recomendado:
+
+Una computadora con acceso a Internet.
+
+Ram mínima de 16GB(windows), y 8GB(mac).
+
+CPU mínimo Intel i5 / AMD Zen Ryzen o Chip Apple M1.
+
+Entre más potencia tenga tu equipo, más fluida será la experiencia en Android Studio.
+
+
+
+Conocimientos previos:
+
+Este curso está diseñado para personas con poca o ninguna experiencia programando.
+
+Sin embargo, necesitas conocer Kotlin a nivel básico, ya que todo el desarrollo será con ese lenguaje.
+
+
+
+¿Aún no lo conoces?
+
+No te preocupes. Puedes pausar este curso y tomar primero mi otro curso gratuito:
+
+Kotlin desde cero: Fundamentos completos para principiantes
+
+Te servirá como base perfecta antes de aprender Android.
+
+
+
+Y eso es todo lo que necesitas.
+
+
+
+¡Estas listo para arrancar tu camino en el desarrollo de Android!
+
+
+Para tomar este curso necesitas un entorno de desarrollo, es decir, un programa que pueda entender
+
+el código y ejecutarlo dentro de un emulador o dispositivo físico.
+
+Para el caso de Android no hay discusión.
+
+El IDE oficial es Android Studio.
+
+Si tu ordenador tiene buenos recursos, el emulador será tu mejor opción.
+
+Si no, ejecutar tus aplicaciones vía cable USB o WiFi será lo más recomendable.
+
+En mi canal de YouTube tienes tutoriales donde muestro paso a paso cómo descargar e instalar ambas opciones
+
+tanto para Windows como para Mac.
+
+Te dejaré los enlaces como recursos en esta misma clase.
+
+El objetivo es que al terminar tu instalación puedas crear un primer proyecto en blanco.
+
+Con eso estarás listo para comenzar este curso.
+
+Una vez que ya tenemos instalado Android Studio, vamos a proceder con crear nuestro primer proyecto
+
+que se va a enfocar ya en la plataforma de Android con Jetpack Compose.
+
+Bueno, vamos allá.
+
+Vamos a irnos aquí al menú que dice File, después New New Project y dentro de esta pantalla vamos a
+
+dejar seleccionado Empty Activity.
+
+Si no estaba seleccionado, bueno, selecciónalo.
+
+Vale, esto es para que trabaje con Jetpack Compose.
+
+Bueno, hacemos clic en Next.
+
+Vamos a asignarle un nombre para esta ocasión vamos a ponerle el nombre de Device.
+
+Por qué?
+
+Bueno, a continuación vas a averiguarlo.
+
+De momento, simplemente ponle así device.
+
+También podrías personalizar lo que es el Package name.
+
+Como yo ya he creado muchos cursos y muchos proyectos de Android, ya justamente le puse aquí mi marca.
+
+Tú tendrás, por ejemplo, con Example.com y el nombre de la aplicación.
+
+Cierto.
+
+Bueno, entonces puedes editarlo como tú quieras.
+
+Vale.
+
+Bueno, lo voy a dejar como estaba.
+
+Y continuamos después en Safe Location.
+
+Es decir, donde se va a ubicar por default.
+
+Se te debería de mostrar así tu nombre de usuario Android Studio Project y después ya la carpeta con
+
+el nombre que has puesto aquí arriba.
+
+Pero yo una vez más voy a dejarlo así porque ya es mi lugar de trabajo.
+
+En este momento estoy creando cursos aquí para YouTube.
+
+Bueno, igualmente puedes seleccionar aquí de forma gráfica.
+
+En fin, luego viene el SDK mínimo.
+
+Esto significa que a partir de qué versión de Android tu aplicación va a ser compatible en este caso?
+
+Aquí yo tengo ya preseleccionado el API 26, que es Oreo o también llamado Android ocho.
+
+Aquí podemos elegir todas las versiones de Android disponibles.
+
+Evidentemente, entre más reciente sea, pues tendremos más capacidades, más características que van
+
+saliendo con cada versión nueva, pero también hará que sea más incompatible con los dispositivos,
+
+porque como saben, Android sufre de ese problema de fragmentación.
+
+Es decir, que de todos los dispositivos activos actualmente en el mundo, bueno, no todos llegan a
+
+actualizarse a la última versión, siempre hay un rezago.
+
+Yo en este caso te diría te recomendaría que elijas Android Oreo, ya sea la API 26 como yo lo tengo
+
+o 27, ambos son factibles, incluso hasta la p28.
+
+Si ya te quieres preparar un poco más para el futuro, bueno, yo dejo aquí el 26 y continuamos.
+
+Por último, tenemos debajo lo que dice Build Configuration Language y básicamente es con qué lenguaje
+
+vamos a trabajar en el compilador.
+
+Ok?
+
+Solamente tenemos dos opciones Kotlin o Groovy, el tradicional.
+
+El antiguo era Groovy, pero ahora ya se trabaja también con Kotlin.
+
+En esta parte.
+
+Entonces yo te recomiendo que lo elijas para que así, con un solo lenguaje de programación, puedas
+
+configurar tu proyecto, puedas diseñar las vistas y también, por supuesto, manejar la lógica de tu
+
+aplicación.
+
+Bueno, ahora que ya tenemos configurado nuestro proyecto, vamos a pulsar en Finish.
+
+Perfecto, Aquí ya se está abriendo mi proyecto.
+
+Vamos a esperar un poco a que termine aquí abajo de sincronizarse.
+
+Gradle Vean aquí también te va diciendo que es exactamente la tarea que está ejecutando en este momento.
+
+Normalmente las primeras veces también va a tardar un poco más porque tiene que descargar algunos complementos,
+
+versiones de librerías, En fin, vamos a tener un poco de paciencia y listo.
+
+Ahí está avanzando.
+
+Excelente, Excelente.
+
+Ha finalizado.
+
+Podemos cerrar las ventanas que no nos sirvan.
+
+Por ejemplo, aquí tenemos en medio el editor ese lo dejamos abierto.
+
+En la parte derecha tenemos este que dice Gradle.
+
+Vale?
+
+De momento no vamos a ocupar nada de esto, así que lo voy a ocultar.
+
+Simplemente lo puedes hacer clic aquí donde dice IDE o también en el mismo icono donde está resaltado
+
+Vale.
+
+Y en este caso es la exploración del proyecto.
+
+Acá en la parte izquierda.
+
+Aquí podemos explorar nuestros archivos.
+
+Ok, en este caso no la voy a ocultar, simplemente la voy a redimensionar ok para que no ocupe tanto
+
+espacio y tengamos aquí un poco más de amplitud.
+
+Bueno, entonces ya hemos creado nuestro primer proyecto.
+
+Simplemente vamos a despedir la clase haciendo una breve exploración de cómo se conforma un proyecto
+
+de Android.
+
+Primero que todo, quiero comenzar por Gradle Scripts aquí.
+
+Básicamente es un archivo de configuración.
+
+El más importante o el que más se ocupa comúnmente es este que dice build.gradle del módulo app.
+
+Ok, voy a hacer doble clic para abrirlo.
+
+Muy bien, y aquí básicamente tenemos una configuración.
+
+Como puedes ver, comienza con plugins.
+
+Vale.
+
+Está importado Android Compass y su núcleo.
+
+Después tenemos aquí Android.
+
+Como puedes observar también todo está hecho con Kotlin.
+
+Y bueno, tenemos su paquete este namespace.
+
+Muy bien, hacia dónde estamos compilando en este caso Android 16, el API 36.
+
+Cuál es la API mínimo compatible 26?
+
+Eso fue lo que vimos hace un momento su ID para la Play Store.
+
+Y bueno, algunas cosas más que de momento no vamos a tocar, pero tú puedes ir viendo aquí, como también
+
+te dice con qué versión de Java trabaja, en este caso la 11.
+
+Vale.
+
+Y está habilitado con pase.
+
+Por último, tenemos las dependencias, es decir, las librerías.
+
+Aquí están ya todas las librerías que se han añadido de forma automática.
+
+Para que un proyecto de Android trabaje por default tenemos el núcleo de Kotlin, el ciclo de vida de
+
+Android, las actividades para Compose y muchos complementos más que tienen que ver con la interfaz
+
+de usuario.
+
+Vale, además, por supuesto, de Material Design tres.
+
+No te preocupes si de momento es tu primer contacto con Android y no entiendes de qué estoy hablando.
+
+Eso es totalmente normal.
+
+Simplemente yo quería hacer un breve repaso de cómo se conforma este archivo.
+
+Bueno, entonces aquí tenemos ya librerías para complementar, para extender nuestro alcance con Kotlin,
+
+enfocado por supuesto a Android.
+
+Y ahora también vámonos acá donde dice app.
+
+Vamos a expandirlo y luego vamos a buscar este paquete que dice Kotlin más Java.
+
+Vale, aquí tendremos tres paquetes con el mismo nombre, pero vas a ver que uno está diferente.
+
+Es decir, no está en este caso resaltado en un tono verde, sino que está como si fuera por default.
+
+Bueno, ese paquete es el que nos importa.
+
+Los que tengan algo al lado como este que dice Androidtest o este que dice test los vamos a ignorar.
+
+Por ahora simplemente expandimos el primero.
+
+Vale, Y aquí tenemos la parte de compose enfocado a los colores, al tema, es decir, el estilo y
+
+finalmente a la tipografía, las letras.
+
+Bueno, y el archivo MainActivity que fue el que se abrió por default Aquí a nivel de código es el punto
+
+de partida para cualquier aplicación de Android.
+
+En la siguiente clase voy a explicar un poco más de esto.
+
+Por lo pronto, simplemente quiero finalizar con la carpeta res.
+
+Esta carpeta que se encuentra aquí debajo básicamente se enfoca en los recursos de Android.
+
+Por ejemplo, aquí está el ícono de la aplicación.
+
+Por default se le pone este.
+
+Después también tú lo puedes crear, lo puedes personalizar, pero por ahora vamos a dejarlo así.
+
+También Drawable es para imágenes o iconos values.
+
+Aquí tenemos múltiples como colores, textos o temas y finalmente XML.
+
+Igualmente hoy casi no se toca, a excepción de ciertas configuraciones, ciertos recursos que tengan
+
+que apuntar a una dirección interna, pero esas ya son cosas un poco más avanzadas.
+
+Por lo pronto vamos a finalizar la clase.
+
+Ya creaste tu primer proyecto y tuviste un pequeño tour de cómo es que se estructura un proyecto de
+
+Android.
+
+Vale?
+
+Bueno, pues no digo más.
+
+Te veo en la siguiente clase.
+
+Para nuestra siguiente clase vamos a comenzar a ver qué tipo de aplicación vamos a crear.
+
+Bueno, vamos a comenzar aquí con un bosquejo que yo ya tengo hecho y como puedes observar, pues aquí
+
+sería un dispositivo móvil el cual tiene un título que sería para comprar dispositivos electrónicos.
+
+Tenemos varios modelos OK y cada uno de estos está dividido o separado por un elemento.
+
+Vale.
+
+Podemos notar algunas características como que tenemos un icono aquí en la izquierda y también que dependiendo
+
+de los datos disponibles se podría dibujar un poco más o estar totalmente solos.
+
+Bueno, pues vamos entonces a encontrar un API que pueda servirnos para esta aplicación.
+
+Yo ya la he buscado con anterioridad y de hecho te la voy a dejar aquí en la descripción.
+
+Entonces solamente vamos a abrir un explorador.
+
+Por supuesto, también tú siéntete libre de buscar cualquier otro API REST.
+
+Simplemente puedes googlear.
+
+Yo te recomiendo que hagas así Free api REST.
+
+Vale.
+
+Y te van a salir un montón de proveedores gratuitos donde tú puedas justamente elegir alguna que se
+
+acomode.
+
+En este caso yo elegí esta que tengo acá, que te estoy mostrando y que te voy a compartir porque me
+
+parece bastante sencilla, bastante fácil, además de que también no te pide ningún tipo de autenticación,
+
+llave de acceso, En fin, sencillamente como puedes ver, vamos a trabajar sobre el primero este get
+
+para traer un listado de objetos y sencillamente la solicitud es a través de una URL.
+
+Aquí también nos da el ejemplo de la respuesta.
+
+Vale, es en formato JSON y si por alguna razón esta URL RL dejará de estar activa porque no sé cuando
+
+vayas a ver este video.
+
+Bueno, te voy a dejar en la descripción de esta misma clase.
+
+También algunas APIs que puedas utilizar que se parezcan bastante a la de este ejemplo.
+
+En fin, ya tenemos nuestra API, por lo tanto, ahora sí, vamos a comenzar en lo que se llama modelo
+
+de datos, es decir, vamos a analizar la respuesta que obtendremos de ese servicio web y basándonos
+
+en esto, ya podríamos nosotros transformarlo a Kotlin.
+
+Bueno, voy a copiar entonces esta respuesta hasta acá, donde cierra justamente ese arreglo y la voy
+
+a copiar aquí dentro de una clase, la cual, por cierto, vamos a crear a continuación.
+
+Si te das cuenta aquí analizando un poco los datos, podemos darnos cuenta de que se trata de dispositivos
+
+electrónicos.
+
+Tienen un identificador ok, un número irrepetible, Un nombre y unos datos.
+
+Vale.
+
+Dónde nos puede dar?
+
+Aquí.
+
+Color.
+
+Capacidad.
+
+Pero, por ejemplo, en el siguiente elemento vemos que data viene como null, es decir, está vacío,
+
+no viene ese dato como tal.
+
+Bueno, entonces vamos a continuar aquí.
+
+Vamos a colocarnos en el paquete principal, vamos a hacer clic derecho y vamos a crear nuestro primer
+
+modelo de datos.
+
+Para esto vamos a elegir el tipo de clase que se llama Data class y le vamos a poner un nombre.
+
+En este caso yo le pondré device.
+
+Por eso es que el proyecto se llama Device en plural.
+
+Bueno, seleccionamos, ahí tenemos ya nuestra data class y vamos a poner las propiedades para esto.
+
+Recuerdan que yo copié esa respuesta?
+
+Bueno, la voy a poner aquí como comentario, entonces abro un bloque ok y pego Bien.
+
+De esta forma aquí lo tendré a la mano en Android Studio y será más fácil copiar y pegar las propiedades
+
+para que no haya ningún error aquí a la hora de escribir.
+
+Empezamos por el ID.
+
+Val pgo ID de tipo long, que es lo más común para identificadores.
+
+Luego vendría la propiedad del nombre.
+
+Podemos ver que esta es un string, es decir, una cadena de texto val pegamos y de tipo String.
+
+Bien, luego viene Data, Ok.
+
+Val Data.
+
+Pero aquí comienza lo divertido, ya que como puedes ver, Data también es un objeto.
+
+Esto de acuerdo a la estructura JSON.
+
+Bien, pues vamos a crear entonces ese Subobjeto, el cual, pues básicamente se trata de las especificaciones
+
+de cada dispositivo.
+
+Por lo tanto, vamos a asignar ese nombre una vez más.
+
+Data class y le ponemos en este caso spec.
+
+Muy bien.
+
+Y aquí vamos a copiar las propiedades.
+
+Por ejemplo.
+
+Color.
+
+Val.
+
+Color de tipo String.
+
+Ok.
+
+Y la capacidad también sería un texto.
+
+Bien.
+
+Val.
+
+Pegamos y le ponemos String.
+
+Excelente.
+
+Voy a darle un mejor formato.
+
+Dando un salto de línea.
+
+Nada más déjenme corregir aquí los espacios.
+
+Bien.
+
+Ahí quedará ya ese modelo de datos.
+
+Y aquí en Data.
+
+Ahora vamos a poner que este tipo Specs.
+
+Ok.
+
+Bien, pero mucho cuidado.
+
+Si dejamos eso tal cual, podría causar un error.
+
+porque como vemos en el segundo elemento data es un nulo.
+
+Entonces aquí en Kotlin tenemos que especificar que este dato data podría ser null.
+
+Eso lo ponemos con un signo interrogación y listo.
+
+Igualmente le voy a dar aquí un mejor formato y ya con eso vamos a ir despidiendo la clase.
+
+Pero quiero comentar algo extra.
+
+Si nos damos cuenta solo nos basamos en el primer y segundo elemento para construir tanto la clase Device
+
+como specs.
+
+Pero si bajamos un poco más, por ejemplo acá vamos a notar que este tiene la propiedad del precio,
+
+vale, pero no tiene por ejemplo capacidad, este tiene incluso generación y así sucesivamente.
+
+Es decir, que no están todos los datos de forma homogénea en su lugar.
+
+La forma de trabajo para esta respuesta de el Web Services es que si existe el dato nos lo da.
+
+Si no, sencillamente se omite.
+
+Ok, bueno, entonces una vez que ya analizamos nuestra fuente de datos, también debemos de prepararnos.
+
+Aquí, por ejemplo, las especificaciones podrían traer o no el color.
+
+Así que vamos a poner mejor que también es un posible null.
+
+Y lo mismo con la capacidad.
+
+Si nuestra fuente de datos no puede garantizar que venga esa propiedad, nosotros como programadores
+
+de Android tenemos la responsabilidad de marcarlo gracias a Kotlin.
+
+Ok?
+
+Bueno, pues con esto ya habremos terminado la clase.
+
+Estamos preparados para comenzar a aprender Jetpack compose y que con eso podamos diseñar una interfaz
+
+similar a este bosquejo.
+
+Te parece?
+
+Pues vamos allá.
+
+
+
+Ahora que ya tenemos nuestros modelos de datos para poder visualizar estos dispositivos, vamos a comenzar
+
+a trabajar un poco sobre la vista.
+
+Como saben aquí yo tengo un pequeño bosquejo de la aplicación que quiero construir.
+
+Vamos a comenzar por lo más básico, ya que será nuestro primer contacto con Jetpack Compose y para
+
+esta clase vamos a entender cómo es que funciona, cómo es la estructura básica y también vamos a concentrarnos
+
+en esta parte.
+
+El título de nuestra aplicación.
+
+Ok, bueno, pues manos a la obra.
+
+Para esto, primero que todo me voy a ir al archivo original de este proyecto, el que se creó al inicio
+
+llamado MainActivity.
+
+Como lo dije también en su momento, ya tendríamos oportunidad de explicar este código.
+
+Bueno, como puedes apreciar está escrito 100% en Kotlin, pero hay unas palabras que están totalmente
+
+Especializadas en construir las vistas para Jetpack Compose.
+
+Si nunca has programado para Android, te puedo explicar rápidamente que esta es una clase llamada MainActivity,
+
+la cual hereda de una base de actividades que es una actividad en Android.
+
+Bueno, básicamente cualquier aplicación necesita por lo menos una actividad y cada actividad debe tener
+
+una interfaz para mostrar al usuario.
+
+Ok, hay aplicaciones que si por ejemplo tienen cinco pantallas, cinco diseños, bueno, entonces tienen
+
+cinco actividades.
+
+Pero por otro lado, también se podría diseñar una aplicación que tenga cinco pantallas, cinco diseños,
+
+pero una sola actividad.
+
+Como te digo, al final esta clase es el ancla de las aplicaciones en Android y dichas actividades tienen
+
+unas etapas o algo llamado ciclo de vida.
+
+Este es el más común que vas a ver, porque justamente aquí se crea la actividad y es el punto ideal
+
+para poder nosotros enlazar la vista.
+
+De hecho, por eso vemos esta línea que dice Setcontent.
+
+Que ya pertenece a Jetpack Compose.
+
+Básicamente dice añade el contenido, la interfaz gráfica a esta actividad.
+
+Luego tenemos algo llamado tema, que básicamente es el que define cómo se va a visualizar toda nuestra
+
+aplicación, es decir, colores, tamaños, tipo de letra, incluso hasta iconos por default.
+
+Ya tiene un tema predefinido, en este caso basado en Material Design tres.
+
+Y después del tema, ahora sí, ya comienza lo que es nuestra vista.
+
+Primero que todo tenemos un contenedor llamado scaffold.
+
+Es el contenedor principal que se encarga de coordinar todos los elementos que podamos meter dentro
+
+de nuestra interfaz.
+
+Pero para este caso se ha generado un pequeño código al momento de crear el proyecto, como puedes ver
+
+aquí debajo dice Greeting y al seleccionarlo, al pulsar encima podemos ver que se resalta aquí abajo
+
+una función.
+
+Las vistas dentro de Jetpack Compose se construyen a través de funciones hechas 100% con Kotlin y cada
+
+función debe estar marcada con Composable.
+
+Vale también a diferencia de una función normal, las que están diseñadas para compose, tú puedes observar
+
+que están escritas con mayúsculas en la primera letra.
+
+Vale, esto es totalmente permitido para este caso.
+
+Después vas a notar también que podrías tener algunos argumentos dentro de la función un nombre que
+
+es de tipo String y después algo llamado Modifier que es un Modifier.
+
+Más adelante vamos a profundizar en esto, pero de momento quiero que sepas que un modifier básicamente
+
+es el que se encarga de modificar la base de cualquier vista en compose puede ser para el fondo, para
+
+el espacio, para alinear.
+
+En fin, un montón de opciones van a ser a través de un modifier.
+
+Ok, bueno, y dentro de esta función vamos a ver que tenemos el primer componente, el segundo componente,
+
+el primero ya dijimos que fue Scaffold.
+
+Entonces este es el segundo componente que tenemos con Compose.
+
+Esto ya está prefabricados, de hecho también puedes ver que se resalta en un color igual, en este
+
+caso verde, y este texto tiene una propiedad la cual dice Hello.
+
+Y con String templates concatena el nombre.
+
+Además recibimos este modifier que por cierto, si lo vemos desde acá arriba, el que estamos mandando
+
+es un modifier con un padding.
+
+El padding básicamente es un espaciado.
+
+En este caso puedes ver que recibe un padding que ya viene desde el scaffold.
+
+Todo esto ya está preestablecido por Android.
+
+Pero como yo no me quiero arriesgar en este caso a que tú tengas o no el mismo código que yo estoy observando,
+
+porque esto podría cambiar con una versión posterior de Android Studio.
+
+Entonces quiero destruir esta función y construir una desde cero.
+
+Muy bien, entonces la voy a eliminar.
+
+Evidentemente, eso provocará un error.
+
+Cierto?
+
+Bueno, a continuación vamos a arreglarlo.
+
+Pero voy a construir, como te digo, una propia a esta función.
+
+Vamos a marcarla con Composable.
+
+Ok.
+
+Después ponemos la palabra reservada fun.
+
+Estas funciones tienen que ser públicas y después el nombre.
+
+En este caso le voy a poner main porque estamos en la actividad principal.
+
+Entonces conservo la palabra main.
+
+Y ahora voy a poner View.
+
+Vale, bien.
+
+De hecho, esto nos va a servir para que veamos realmente cómo es que afecta esta línea que se agrega
+
+ya en el código que a mí me está mostrando.
+
+Miren, primero que todo voy a hacer la función así, sin ningún argumento, ok?
+
+Y dentro voy a poner un texto, vale?
+
+Dentro de su propiedad Text le voy a poner.
+
+Comprar, que es justamente lo que tengo acá en mi bosquejo.
+
+Bueno, entonces aquí por medio de un string pondré Comprar.
+
+Vale, genial.
+
+Ahora vamos a reemplazar esto que nos marca aquí en rojo por nuestra nueva función de Compose, que
+
+sería Main View.
+
+Vale.
+
+Lo mismo va a pasar aquí arriba.
+
+De hecho, no la voy a borrar.
+
+La voy a comentar nada más para que comparemos y podamos aquí tener esta línea todavía.
+
+Y ahora sí, vamos a poner igualmente Main View y listo.
+
+Vas a ver que marca un error aquí arriba, porque inner padding no está siendo ocupado.
+
+Sin embargo, sí te va a dejar que ejecutes esta aplicación a pesar de ese error.
+
+Bueno, voy a lanzar uno de mis emuladores para que podamos ejecutar esta aplicación.
+
+Muy bien, ejecuto y vamos a esperar.
+
+Excelente.
+
+Ahí está ya nuestra aplicación ejecutándose.
+
+Pero podemos ver que hay un problema.
+
+Si observamos muy bien aquí donde dice comprar.
+
+Déjenme ponerle más zoom para que se pueda apreciar bien.
+
+Ahí lo tenemos.
+
+Está justamente esquinado en la parte superior y hace ahí un traslape con lo que es la hora o las notificaciones
+
+del teléfono.
+
+De ahí la importancia que tenemos esta línea que dice inner padding.
+
+Como recuerdan, yo mencioné que el padding es para espaciados dentro de jetpack compose.
+
+Entonces lo ideal es que respetemos ese pequeño espacio que utiliza lo que es la barra de estado donde
+
+se muestran estos iconos en la parte superior.
+
+Por lo tanto, si queremos que nuestra vista esté apta para hacer la raíz de Jetpack Compose, tenemos
+
+que añadir aquí ese argumento del modifier.
+
+Ok.
+
+Vamos a poner modifier de tipo Modifier.
+
+Y por lo tanto acá vamos a poner modifier punto padding, la misma línea que tenemos ahí comentada o
+
+bueno, que yo tengo, porque repito, no sé si tú vas a tener ese mismo código plantilla.
+
+En fin.
+
+Ahora sí deja de marcar ese error porque ya está siendo utilizado.
+
+Desde luego, eso nos va a obligar también a que acá metamos un modifier para que no marque error.
+
+En la siguiente clase vamos a ver un poco más sobre preview, pero por lo pronto Quiero que finalicemos
+
+esta clase haciendo uso de ese modifier inicial y para que realmente surja efecto tenemos que pasarlo
+
+en el contenedor o componente inicial de nuestra vista.
+
+En este caso solo tenemos un texto, así que lo voy a poner aquí Modifier va a ser igual a Modifier
+
+y listo, ya está siendo utilizado.
+
+Voy a volver a ejecutar y veamos, miren qué gran diferencia!
+
+Ahora sí está respetando ese espacio superior por default y ya podemos entonces comenzar a diseñar cualquier
+
+cosa sin tener que pensar en esa parte de arriba, en ese margen.
+
+Ok, pues con esto vamos a finalizar esta primera clase que tuvo el primer contacto con Jetpack Compose.
+
+Ahora vamos a explorar un poco más la herramienta del preview.
+
+Como puedes observar también yo aquí en este código de ejemplo ya tenía un preview, pero de qué sirve
+
+exactamente esto?
+
+Bueno, en este caso, en lugar de hacer alguna modificación a nuestro código y tener que volver a ejecutar
+
+para ver en el emulador o dispositivo físico el resultado, vamos a utilizar la herramienta de preview
+
+para ir viendo los cambios en tiempo real.
+
+Para esto, dentro de nuestro editor debemos de seleccionar lo que es la pantalla dividida aquí en la
+
+esquina superior derecha.
+
+Vamos a ir por este icono central que dice Split y listo.
+
+Se va a habilitar esa pequeña ventana de herramientas con la previsualización que tengamos ahí definida.
+
+Por default.
+
+Esta es la previsualización más sencilla que tenemos para Jetpack Compose.
+
+Primero la anotación Preview y opcionalmente tenemos la propiedad Background en and true.
+
+Esto significa que el fondo va a tener ese color si lo ponemos en falso, como estaría por default,
+
+bueno, sería transparente, pero evidentemente para mí al menos eso no me conviene por el tema oscuro,
+
+así que lo pongo en true.
+
+Bien, ahora también podrás notar que la previsualización es de la pantalla, pero con el espacio mínimo
+
+requerido.
+
+Es decir, en este caso solamente tenemos un texto.
+
+Bueno, pues eso es justamente lo que se está visualizando.
+
+Pero si yo quiero previsualizar toda la pantalla, tendría que poner una segunda propiedad aquí y sería
+
+show system UI.
+
+Vale?
+
+También vamos a ponerlo en true y listo.
+
+Ahora ya tendríamos un teléfono simulado para ir viendo cómo se ve nuestro contenido, ya digamos,
+
+de una forma más cercana a lo final.
+
+Pero ahí también tenemos el problema de que se está traslapando.
+
+En este caso yo te recomiendo que aquí puedas agregar un padding que podría ser fijo.
+
+Ponemos punto padding y en este caso solamente quiero que afecte la parte de arriba, así que le pongo
+
+top igual a y ponemos cualquier número que pueda, digamos tener un espacio entre esta barra y nuestro
+
+contenido.
+
+Yo como ya tengo un poco más de experiencia, sé que 24 funciona perfecto, pero necesitamos indicarle
+
+la unidad 24 que bueno, dentro de Android se puede trabajar con píxeles, con densidades, en fin.
+
+Pero para el caso de las vistas lo más recomendable es justamente la densidad y la unidad es punto DP.
+
+Vale, genial.
+
+Si por alguna razón te marca error, se marca en rojo.
+
+Eso significa que no has importado esa extensión, así que simplemente colócate ahí encima y pulsa Alt
+
+Intro y después, como ves, dice importar la extensión, en este caso int punto dp y listo.
+
+Bueno, como puedes ver, ahora si el preview está perfectamente visualizado.
+
+Después también vamos a ver que está marcada como composable.
+
+Eso, como te digo, es totalmente obligatorio.
+
+Es parte de la estructura básica de un preview.
+
+La anotación Preview, la anotación Composable, una función y su nombre, por supuesto.
+
+Ahora muy importante para los previews.
+
+Aquí no debemos recibir nada.
+
+Vale.
+
+Ojo también, por supuesto, podemos renombrarlo aquí, dice Greeting Preview, pero ese es el código
+
+que se había generado por default.
+
+En mi caso, yo le voy a poner main preview, vale?
+
+Simplemente para que vaya acorde con todo mi contexto.
+
+Bueno, luego dentro, aunque no es obligatorio, sí es muy recomendable que utilices el tema de tu
+
+misma aplicación.
+
+Para eso sencillamente escribes el nombre, que en este caso es Device y después la palabra them.
+
+Vale.
+
+Dentro de ese tema, Ahora si pones la vista que quieres Previsualizar.
+
+Esto es importante porque de acuerdo a lo que tú vayas definiendo aquí, como el tema a previsualizar
+
+es justamente el aspecto final que tendrá en esta parte.
+
+Muy bien, ya por último, para despedir esta clase, simplemente quiero darte un consejo aunque esto
+
+funciona.
+
+Es decir, tenemos las tres cosas la actividad, nuestra función composable para la vista y también
+
+su previsualización.
+
+De momento no hay tanto problema porque es un código bastante pequeño, pero conforme vayamos diseñando
+
+la vista esto va a ir creciendo.
+
+Entonces mi recomendación es que tomes este código, vale?
+
+La parte de compose tanto de su vista como su previsualización y te las lleves a un nuevo archivo de
+
+Kotlin.
+
+Entonces voy a cortar esto, ok?
+
+Evidentemente, como ya no hay un preview aquí, deja de funcionar, pero vamos a crear sencillamente
+
+un nuevo archivo aquí de tipo File y le voy a poner main screen.
+
+Vale, tú puedes poner el nombre que quieras, pero esto es un estándar muy utilizado dentro de los
+
+programadores de Android.
+
+Poner el nombre de tu módulo y después la palabra screen.
+
+Bien, creo este nuevo archivo y pego excelente, se importa todo lo necesario y entonces en este nuevo
+
+archivo ahora sí el preview va a funcionar.
+
+Vale?
+
+De hecho, por hacer ese cambio acá, MainActivity ha quedado como una simple actividad.
+
+Por eso cambió su aspecto de archivo a una clase común de Kotlin.
+
+En fin, vamos a ejecutar nuestra aplicación simplemente para corroborar que este cambio que hicimos,
+
+este traslado de código, no está afectando el resultado final.
+
+Vale, aquí en la MainActivity es innecesario el preview, así que lo oculto y listo.
+
+Ahí tienes.
+
+Una vez más, nuestra aplicación está ejecutándose correctamente.
+
+
+Vamos a trabajar ahora en nuestro listado.
+
+Si tú acabas de empezar a aprender cómo es que se programa en Android, posiblemente no sepas cómo hacer
+
+esto, ya que alguien podría pensar Bueno, vamos a ir en orden, empezando por un texto que contenga
+
+el nombre del primer dispositivo, después sus características, su icono, su divisor y así sucesivamente.
+
+Bueno, eso no es nada factible, no solamente porque es muy laborioso, sino porque para empezar,
+
+podríamos no saber cuántos elementos se van a mostrar.
+
+En este caso, aquí se alcanzan a ver seis.
+
+Pero qué pasa si tenemos 200 o mil?
+
+Bueno, pensando en ese tipo de cosas, Android justamente diseñó un recycler que ahora que trabajamos
+
+con Compose es un lazycolumn y básicamente lo que nos dice es diséñame una sola vista, que en este
+
+caso podríamos decir que ya detectamos cuáles son los elementos y los vamos a poner en un solo archivo.
+
+Por lo tanto, cuando tú le pases ese arreglo de datos, sencillamente va a reciclar tu vista y va a
+
+ir rellenando con los datos actuales.
+
+Esto no solamente es una gran eficiencia para el programador, sino que también para el dispositivo.
+
+Esto ahorra mucha memoria, porque en lugar de tener una vista con n cantidad de elementos, sencillamente
+
+va a dibujar.
+
+Los que se alcanzan a percibir en este caso serían seis elementos y conforme nosotros vayamos haciendo
+
+el scroll, pues sencillamente se va a ir pasando una vez más a la nueva vista que repito, es reciclada
+
+y por lo tanto nunca va a aumentar la memoria en ese sentido.
+
+En fin, basta de teoría y vámonos a la programación para que quede mucho más claro.
+
+Entonces vamos a comenzar en esta clase a centrarnos en los textos, ok?
+
+si nos basamos en el primer elemento, tenemos tres el nombre.
+
+Luego, en cuanto a características, el color y la capacidad.
+
+Vale, pues regresamos a Android Studio y vamos a crear un archivo más para que tengamos nuestro código
+
+bien organizado.
+
+Hacemos aquí clic y elegimos File.
+
+Ahora a este le voy a poner el nombre del elemento, en este caso es un dispositivo device, vale?
+
+Y después la palabra item.
+
+Esta es opcional, pero yo te la recomiendo para que también tu puedas distinguir fácilmente entre una
+
+MainActivity por ejemplo, o main screen.
+
+Lo mismo aquí con device que ya tenemos la clase o en este caso sería el archivo contenedor para compose.
+
+Bueno, entonces creamos este archivo y vamos a comenzar.
+
+Voy a crear una función que esté marcada con Composable, Ok.
+
+Esta función se llamará Device View.
+
+Ok.
+
+Bueno, vamos a abrir esta función y vamos a comenzar con nuestro primer elemento que es un texto.
+
+Aquí siempre.
+
+También tengan cuidado de que la importación sea la correcta.
+
+Por ejemplo, tenemos Compose que viene de material tres, pero qué pasa si yo pongo text?
+
+Y como puedes ver tiene esta de acá que viene de org punto W3C, punto DOM.
+
+Bueno, aunque se llama igual, evidentemente esto ya no puede ser marcado como compose.
+
+Ok?
+
+Entonces siempre fíjense también mucho en las importaciones, vale?
+
+Regreso esto como estaba un texto que proviene de Compose y ahora si continuamos primero en la propiedad
+
+Text le voy a decir que recibe el nombre del dispositivo.
+
+Pero cómo hago esto?
+
+Bueno, muy sencillo.
+
+Vamos a indicarle aquí a esta función de compose que vamos a recibir un dispositivo device de tipo device.
+
+Vale?
+
+Bien, y ahora sí, yo puedo decir device punto y en este caso sería el name.
+
+Excelente.
+
+Con eso sería suficiente.
+
+Antes de continuar con nuestro diseño también como buena práctica, yo te recomiendo que siempre pongas
+
+un preview para que en medida de lo posible vayas visualizando tus cambios en tiempo real.
+
+Bueno, entonces pongo aquí Preview, ok?
+
+Vamos a decirle Show background en true y vamos a marcarlo también como Composable.
+
+Excelente esta función la voy a llamar Device Item Preview.
+
+Y listo.
+
+Es una forma fácil de estandarizar y distinguir.
+
+Luego, como te decía, tenemos que poner el tema.
+
+Simplemente pones el nombre de tu aplicación.
+
+Para este caso es Device y luego them.
+
+Ahí ya lo detectó.
+
+Lo selecciono y dentro ponemos el contenido que quiero previsualizar Device View que recibe un device.
+
+Bueno, vamos a crear una nueva instancia aquí.
+
+Device es igual a Device como nueva instancia.
+
+Vale, así que ponemos estos paréntesis y luego rellenamos lo que son los datos.
+
+En este caso, comenzamos por el ID.
+
+Voy a poner cualquier cosa, por ejemplo el uno, el nombre, voy a poner Nexus, ok.
+
+Y luego data con sus especificaciones.
+
+Hago también una nueva instancia, en este caso de Specs.
+
+Ok?
+
+Y este a su vez recibe color y capacidad.
+
+Color.
+
+Le voy a poner aquí Black y capacidad.
+
+Vamos a ponerle 64 gigabytes.
+
+Ok.
+
+Bueno, vamos a habilitar aquí.
+
+Vamos a pasar al modo dividido.
+
+Y si no se visualiza correctamente ese preview, sencillamente puedes presionar el comando que te muestra
+
+o haz clic y con eso se va a reconstruir el proyecto va a compilar y con eso ya tendría que visualizarse.
+
+Excelente.
+
+Ahí está.
+
+Pues vamos a continuar.
+
+Ahora, qué pasa si yo quiero un segundo texto?
+
+Bueno, puedo tomar esto para mayor velocidad.
+
+Copiar y pegar y abajo decir en lugar de el nombre.
+
+Ahora quiero concentrarme en las características.
+
+Empezando por el color.
+
+Bueno, pues pondré data, punto, color.
+
+Pero aquí tenemos un pequeño detalle y es que este valor por default podría ser nulo.
+
+Pero aquí tenemos un detalle y es que esta propiedad podría ser null.
+
+Recordemos dentro de nuestro modelo de datos, aquí en la clase Device que las especificaciones pueden
+
+venir null.
+
+Ok?
+
+Y si entramos aquí vemos que incluso el color podría también ser null.
+
+Entonces, qué opciones tenemos?
+
+Bueno, podría solucionarlo de varias formas.
+
+Vamos a comenzar por la más sencilla un operador Elvis.
+
+Si esto es null, pues no sé.
+
+Pon un guión.
+
+Vale.
+
+Simplemente para que no esté en blanco.
+
+Y acá, por supuesto, tenemos que ponerle el signo de interrogación para seguir la sintaxis de posible
+
+null.
+
+Bueno, hasta ahí todo bien, entre comillas, porque como puedes ver en el preview se están encimando
+
+estos textos.
+
+La solución?
+
+Bueno, ponerlos dentro de un contenedor vertical.
+
+Vamos a solucionarlo.
+
+Y con esto despedimos la clase.
+
+Aquí voy a cortar este código.
+
+Y ahora vamos a poner un column.
+
+Ok?
+
+Este es un contenedor de compose que justamente sirve para que todo lo que pongas adentro se vaya alineando
+
+de forma automática en vertical.
+
+Pegamos y listo.
+
+Ahora sí está uno debajo del otro y como puedes observar, también sigue el mismo orden.
+
+De hecho, si yo pongo un tercer texto, voy a copiar y pegar esto.
+
+Bueno, en lugar de color vamos a poner la capacidad y ahí vas a poder ver como efectivamente, de forma
+
+automática se va poniendo uno debajo de otro.
+
+Bien, con esto terminamos este apartado.
+
+Ya sabemos cómo utilizar un contenedor vertical para poder hacer diseños que justamente vayan así de
+
+forma lineal.
+
+Ahora vamos a ver, digamos, el caso inverso de lo que sería el colum, ya que como puedes apreciar
+
+aquí tenemos nuestros textos, pero siempre al lado izquierdo existe un icono, por lo tanto tendríamos
+
+también un diseño horizontal en ese sentido.
+
+Bueno, veamos cómo hacer esto.
+
+Para empezar, vamos a poner el icono aquí al inicio, nada más para ir previsualizándolo y ya después
+
+lo ubicamos.
+
+Para esto en Compose tenemos un componente llamado así icon ben y podemos suministrar diferentes tipos
+
+de dibujables o gráficos, pero para esta ocasión vamos a utilizar el que dice image vector.
+
+Bien, después accedemos a una clase que ya viene aquí precargada, que se llama icons en plural y ponemos
+
+punto default, punto.
+
+Y ahora sí, el nombre del icono.
+
+Aquí están, debajo tú puedes ir previsualizando, pero en este caso queremos un teléfono, así que
+
+pongo font y si existe, por lo tanto lo selecciono.
+
+Bueno, también vas a ver que te marca un error.
+
+Eso es porque cualquier imagen dentro de Jetpack Compose necesita una descripción o por lo menos la
+
+propiedad, ya que como puedes ver aquí yo le voy a poner content description y le puedo poner cualquier
+
+cosa, por ejemplo icono, pero también podría simplemente dejarlo como null y listo, Funciona.
+
+Lo único que exige es que definas esa propiedad, no el valor que le vayas a poner.
+
+Vale?
+
+Bueno, en el preview ya está aquí.
+
+Déjenme hacerlo un poco más pequeño y hasta aquí arriba.
+
+Y como queremos que el diseño sea horizontal, pues vamos a tomar ese ícono.
+
+Lo voy a cortar y lo voy a poner aquí arriba.
+
+De acuerdo?
+
+Bueno, pero evidentemente esto vuelve a generar el problema de que se están encimando nuestras vistas.
+
+Entonces, una vez más voy a tomar todo esto, lo voy a cortar y ahora voy a poner aquel contenedor
+
+horizontal que se llama Row.
+
+Muy bien, vamos a pegar.
+
+Déjenme darle salto de línea y listo.
+
+Una vez que el preview se recomponga, ahora sí vamos a observar que tenemos justamente este diseño,
+
+nuestros textos y en una lateral nuestro ícono.
+
+Pero aquí tenemos también un detalle, y es que este ícono por default se va en la esquina superior
+
+izquierda.
+
+Sin embargo, acá podríamos tratar de centralizarlo un poco más.
+
+Vale?
+
+Bueno, para eso, dentro del contenedor Row vamos a agregar unas configuraciones extras.
+
+Abrimos un paréntesis y vamos a poner la propiedad que dice vertical alignment.
+
+Muy bien.
+
+Después, a través de la clase que ya viene en Compose Alignment, vamos a escoger justamente eso que
+
+me sugiere al principio Punto Center vertically y listo.
+
+Con eso va a centrar verticalmente todo lo que esté dentro.
+
+Vale.
+
+Bien, pues con esto vamos a concluir la clase de nuestro contenedor horizontal Row.
+
+Nos vemos en la siguiente.
+
+Ahora vamos a trabajar un poco más en el aspecto de nuestra vista, ya que si bien está tomando una
+
+estructura parecida a lo que vemos aquí en este bosquejo, bueno podemos notar algunas diferencias bastante
+
+claras, como por ejemplo que los textos aquí en el preview son exactamente iguales, mientras que acá
+
+podemos notar que tenemos algo más grande, más resaltado y después ya las características están un
+
+poco más secundarias.
+
+Además, también nos faltaría el elemento del divisor.
+
+Bueno, pues esa es la misión de este apartado, así que vamos allá.
+
+Primero comenzamos por los estilos del texto.
+
+Aquí en cada texto nosotros podemos agregar una propiedad llamada style ok?
+
+En esta propiedad nosotros podemos definirle cuál va a ser el estilo que queremos para nuestro texto.
+
+Y una forma bastante fácil que yo siempre recomiendo es a través de la clase Typography Typography.
+
+Ahí, Como puedes ver, me está autocompletando.
+
+Vamos a elegir la primera, la que tiene la B.
+
+Ok.
+
+Que si vemos en la parte lateral entre paréntesis está apuntando hacia nuestro paquete con cursos and
+
+device with them.
+
+Vale.
+
+Mientras que las otras vienen una para Kotlin Text y la otra Android Compose Material tres.
+
+Bueno, entonces elegimos la primera y después vamos a decirle Aquí ya tenemos los diferentes estilos.
+
+Headline Body display, en fin, diferentes estilos.
+
+Es cosa que tú vayas probando.
+
+Por ejemplo, qué te parece un título pequeño?
+
+Vamos a ver cómo resalta un poco más.
+
+Bien, se hizo un poco más como en negritas, pero la verdad es que a comparación de ya el tamaño por
+
+default se hizo hasta más pequeño.
+
+Vamos a ir por una cabecera, así que vamos a poner Headline y vamos a poner el small a ver cómo se
+
+visualiza.
+
+Y ya basándonos en ello, pues después podríamos aumentar o disminuir.
+
+Nada mal, nada mal.
+
+A ver el siguiente nivel, que sería médium si no sobresale tanto.
+
+Bueno, ligeramente más grande, pero todavía está bien, vamos a dejarlo ahí.
+
+De la misma forma vamos a trabajar en los siguientes textos.
+
+Ponemos al final la propiedad Style.
+
+Después, a través de Typography vamos a seleccionar alguno de los estilos predefinidos.
+
+En este caso sería para un cuerpo body y también vamos a poner médium para seguir digamos ese estándar
+
+Ok?
+
+Y es más, puedo copiar y pegar en el siguiente texto ya que acá tienen el mismo aspecto, ok?
+
+Bueno, bastante bien.
+
+Ahora vamos a trabajar en ese divisor.
+
+Bueno, en este caso, aquí mismo en el colon.
+
+Vamos a poner al final un componente de compose llamado horizontal Divider.
+
+Ahí está.
+
+Excelente.
+
+Lo ponemos y listo.
+
+Aquí en el preview se alcanza a ver un poco aquí debajo.
+
+Una vez que ejecutemos la aplicación se va a ver mucho mejor, pero por lo pronto ahí está.
+
+Bueno, y ya para despedir la clase también vamos a hacer algo con el estilo que nos falta.
+
+En cuanto a el título, que sería comprar.
+
+Ok, esto es incluso más grande que lo que acabamos de asignarle aquí en el primer texto de nuestro
+
+elemento.
+
+Y para eso vamos a mainscreen aquí nuestro texto.
+
+Al final ponemos style y también a través de Typography vamos a decirle display a ver el medium si no
+
+está demasiado grande.
+
+Vamos a ver.
+
+Bueno, todavía está tolerable.
+
+Excelente.
+
+Nos faltaría centrar ese texto como está en nuestro bosquejo.
+
+Así que vamos a hacerlo de una buena vez.
+
+Ya con eso despedimos la clase.
+
+Para eso vamos a agregar una propiedad más a este texto.
+
+En este caso se llama text align.
+
+Vale.
+
+Y de la misma clase, bueno, de la clase con el mismo nombre, mejor dicho text align.
+
+Vamos a seleccionar center y listo.
+
+Con eso se tiene que descentralizar, pero como tú puedes ver, aquí no está pasando absolutamente nada.
+
+Por qué?
+
+Bueno, porque nos falta decirle que esto debe tomar un mayor ancho.
+
+No hubo ningún cambio, se sigue mostrando ahí a la izquierda.
+
+Por qué?
+
+Bueno, la respuesta la vamos a ver con el siguiente tema en el cual vamos a profundizar y se trata
+
+del modifier.
+
+Ahora vamos por el Modifier, aunque ya lo hemos utilizado anteriormente.
+
+Por ejemplo aquí para agregar un espaciado, un padding en la parte superior.
+
+Bueno, ahora vamos a profundizar un poco más para que veamos cómo es que funciona y vamos a reutilizar
+
+este título de comprar.
+
+De hecho, con la acción de seleccionarlo puedes ver como en el preview resalta ese texto.
+
+Vale.
+
+Bueno, ya no me resaltó.
+
+Ahí está.
+
+Quiero que veas justamente ese contorno en azul que se está marcando.
+
+Bueno, precisamente ese es el espacio que está ocupando el texto, Por eso no sirvió de nada centralizarlo,
+
+porque al final no hay donde puedas recorrer el texto en su lugar.
+
+Vamos a modificar estas propiedades del diseño y distribución con el modifier que ya contiene este texto.
+
+Para eso vamos a poner la propiedad punto Fill Max.
+
+Y como puedes ver, dice size, width o height.
+
+Bueno, size es alto y ancho.
+
+Width es solamente ancho y height es solamente alto.
+
+Ok, en mi caso lo que yo quiero es que el ancho abarque todo el espacio disponible y ahora sí, como
+
+puedes ver en el preview ya se está centralizando.
+
+Si nos colocamos nuevamente encima puedes ver como ahora ese espacio azul ya abarca todo el ancho.
+
+Ok, bien, pero vamos a entender un poco más sobre el modifier, ya que este puede tener múltiples
+
+propiedades aquí por ejemplo, qué pasa si yo quiero un background, es decir, un color de fondo?
+
+Bueno, puedo ponerle punto background y aquí a través de la clase Color si quieres tú no hagas esto,
+
+simplemente es para que vayas aprendiendo, ya que lo voy a eliminar al final porque nuestro diseño
+
+no contiene un color de fondo.
+
+Vamos a elegir esta clase Color, pero en lugar de una nueva instancia, vamos a acceder a alguno de
+
+los colores predefinidos, por ejemplo Rojo y mira, ahí está.
+
+Cambio el fondo.
+
+Vale.
+
+Bien, de igual forma podemos agregar un padding simplemente a modo educativo.
+
+Ok?
+
+Vamos a ver cómo podemos combinar múltiples configuraciones.
+
+Aquí voy a poner, digamos, diez, pero recuerden siempre poner el DP.
+
+Vale?
+
+Y eso básicamente hace que haya un pequeño espaciado.
+
+Miren, ahí se visualiza perfectamente.
+
+Tenemos esa línea en azul que contiene el texto, pero el padding da ese espacio hacia el exterior.
+
+Le voy a dar un poco más aquí para que se visualice mejor.
+
+Miren, ahí está perfectamente ya.
+
+Cómo se duplicó ese espacio?
+
+Ahí se aprecia mucho mejor cómo es que se duplicó ese espacio.
+
+Pero también quiero que notes algo muy importante dentro del modifier.
+
+El orden sí importa.
+
+Qué pasa si yo primero aplico un padding antes que un background?
+
+Mira, el resultado es totalmente diferente.
+
+Como puedes observar, primero se hizo ese espaciado.
+
+Ok, pero ahí todavía no tenía tinte.
+
+Después ya se aplicó el background, pero cuando ya teníamos esa parte del espaciado, por eso es que
+
+tenemos este aspecto.
+
+Entonces simplemente quería demostrarlo para que tomes mucho en cuenta el orden en el que pones tus
+
+propiedades para que tengas el resultado esperado.
+
+Bueno, como te decía, voy a eliminar estas propiedades temporales.
+
+Igual si tú quieres comentarlo lo puedes hacer así y listo.
+
+De esta forma podrías, digamos, salvar por si quieres más adelante consultar esto que acabamos de
+
+aprender, ok?
+
+Pero sin afectar el resultado actual que como lo vimos al principio, simplemente queríamos centralizar
+
+ese texto.
+
+Bueno, y ya que andamos con el modifier, vamos a pasar a Device Item porque también quiero que notes
+
+cómo este icono en comparación con nuestro bosquejo aquí está totalmente pegado.
+
+Bueno, el preview no se ve correctamente.
+
+Cuando te pase eso, simplemente reconstruye el proyecto.
+
+Para eso puedes utilizar este martillo que ves aquí.
+
+Con eso se va a compilar y el preview tendría que refrescarse.
+
+Bien, ya se refrescó y como te decía este teléfono aquí puedes notar que está muy pegado a los textos.
+
+Yo quiero que tenga un poco más de espacio.
+
+Vale?
+
+Bueno, me coloco aquí en el ícono y pongo un modifier.
+
+Vale.
+
+Se autocompletó sin querer.
+
+Modifier igual a.
+
+Y ahora si Modifier empezando con mayúscula.
+
+Elegimos el que proviene de Compose y vamos a agregar un padding.
+
+Si tú pones un solo número así sin especificar, se va a aplicar a todos los lados, como lo vimos en
+
+el caso anterior.
+
+Pero si yo quiero especificar en este caso solo quiero que se aplique a la derecha o al inicio.
+
+Bueno, puedo hacerlo con la propiedad Start.
+
+Vale.
+
+Por ejemplo, vamos a poner 16.
+
+Vamos a importar DP y listo.
+
+Se separa 16.
+
+Y si yo quisiera que se separe también en la parte derecha, es decir, en la parte final pongo end
+
+vale igualmente 16 dp.
+
+Ok, con esto ya tendría que verse simétrico.
+
+Excelente.
+
+Pero también si tenemos tanto izquierda como derecha con la misma unidad, con la misma proporción.
+
+Compost está preparado para simplificar esto y decirle simplemente horizontal 16 dp.
+
+Vale, bien, De la misma forma existen las propiedades aquí tab Barham para la parte inferior y también,
+
+por supuesto, vertical.
+
+Una vez más, si no especificas nada, se aplicará en todos los lados.
+
+Bueno, vamos a dejarlo como horizontal y listo.
+
+Seguimos mejorando el aspecto de nuestra aplicación.
+
+Y qué te parece si a partir de la próxima clase, en el siguiente tema, nos concentramos ya en que
+
+se puedan ver estos cambios pero en tiempo de ejecución, no simplemente en los previews de aquí en
+
+Android Studio, te parece?
+
+Bueno, pues vamos allá.
+
+Ahora sí, vamos a comenzar a visualizar esta vista, pero dentro de un listado ya en tiempo de ejecución.
+
+De acuerdo?
+
+Bueno, pues vamos allá.
+
+Primero que todo, vamos a irnos a mainscreen.
+
+Ok.
+
+Y como recordarán aquí en Device Item, nosotros cuando queremos ubicar un elemento arriba de otro ocupamos
+
+un column.
+
+Que por cierto, miren, estoy dándome cuenta que le puse Device view pero en el preview yo te puse
+
+Device item preview que de hecho si recuerdo que mencioné esta parte de que pudieras identificar rápidamente,
+
+entonces déjenme aquí renombrar esto.
+
+Vamos a ponerle item para que quede estandarizado Device item view.
+
+Ok.
+
+Bueno, acá también, por supuesto en preview.
+
+Y listo.
+
+Ahora sí continuamos.
+
+Como te decía, vamos acá y tomaremos este texto.
+
+Vamos a cortarlo y a poner en su lugar un column.
+
+Ahora, si adentro vamos a pegarlo y debajo vamos a comenzar con ese listado.
+
+Para el caso de Jetpack Compose se utiliza el componente Lazycolumn.
+
+Ok, es el más recomendable.
+
+Bien, aquí vamos a definirle básicamente dos cosas Cuál es la fuente de datos?
+
+Es decir, un arreglo en este caso sería de dispositivos.
+
+Y por otra parte, cuál es la vista que vamos a reciclar para visualizar esos dispositivos?
+
+Bueno, comencemos entonces por el arreglo.
+
+Aquí, en esta función principal vamos a pasarle un arreglo que se llame Device ok, sería de tipo list
+
+y también de tipo device.
+
+Ok?
+
+Bueno, ahora sí, ya que tenemos un arreglo con el cual trabajar, vamos a poner aquí items dentro
+
+de nuestro lazycolumn y tenemos que indicarle cuál va a ser la longitud máxima de este listado.
+
+Esto lo obtenemos fácilmente a través del arreglo con la propiedad Size.
+
+Genial.
+
+Bueno, salimos y abrimos un pequeño bloque de código aquí.
+
+Básicamente nos devuelve el índice.
+
+Lo voy a renombrar para que quede muy claro, mucho más legible.
+
+Y entonces será mucho más fácil que nosotros aquí le digamos a nuestra vista cuál va a ser justamente
+
+la posición de ese elemento.
+
+Es decir, pongo device itemview, ok?
+
+Recuerden, este recibe un dispositivo, así que vamos a ponerle device el arreglo en la posición index.
+
+Ok?
+
+Bien, digamos que esta es la configuración más básica para un listado dentro de Jetpack Compose.
+
+Después podemos agregar algunas cosas para mejorar su aspecto, pero vamos a hacer primero aquí esa
+
+prueba.
+
+Aunque también hay que corregir nuestro preview, porque además del modifier ahora necesitamos aquí
+
+justamente un arreglo.
+
+Voy a poner List of Vale Y adentro vamos a pasar algunos dispositivos.
+
+Por ejemplo, acá yo ya creé uno.
+
+Simplemente voy a copiar y pegar para mayor velocidad, ok?
+
+Pego excelente y es más, voy a agregar un par aquí, me voy al final coma y pego otra vez.
+
+Pero fíjense, ahora lo que voy a hacer es aquí poner el número dos, voy a cambiar el nombre Galaxy
+
+y las especificaciones lo vamos a poner como nulo.
+
+Ok?
+
+NULL.
+
+Bien, pero me parece que tengo un problema con los paréntesis.
+
+Si borro y pongo acá al final me faltaría uno extra para mainview y ahora sí ya no marca error.
+
+Excelente, excelente.
+
+Bueno, Pues no se refresca nuestro preview.
+
+Miren acá en Mainview.
+
+Pero MainActivity nos marca un error.
+
+Justamente es lo mismo que ahora recibe un listado.
+
+Voy a copiar y pegar para mayor velocidad.
+
+Aquí coma y pego, ok?
+
+Bueno, vamos a esperar a ver si ahí se recompone.
+
+No voy a compilar manualmente, ya saben.
+
+Si por alguna razón no se refresca, pueden compilar haciendo clic aquí.
+
+Vean, ahí está.
+
+Ya tenemos nuestro listado, que de momento solo son dos elementos.
+
+Incluso en tiempo de ejecución.
+
+Vamos a ejecutarlo para que también lo vean ahí.
+
+Excelente.
+
+Ahí lo tenemos.
+
+Bueno, como te decía, podemos mejorar algunos aspectos.
+
+Claro que sí.
+
+Lo primero que se me ocurre es ponerle un espaciado acá en la parte final, en la parte del inicio no
+
+lo veo necesario porque este ícono ya nos está dando un espacio.
+
+Es más que suficiente.
+
+Recordemos, acá nosotros pusimos un padding horizontal de 16 DP, entonces acá lo que yo puedo hacer
+
+es darle un espacio de 16 DP Ok?
+
+Puedo hacerlo desde acá o desde el mismo device item.
+
+Para eso tendría que afectar el contenedor principal de esta función con compose, así que voy por Row.
+
+Vamos a poner un modifier modifier padding y en este caso sería únicamente la parte final.
+
+END 16 dp Ok.
+
+Con eso ya se va a equilibrar.
+
+Y otra cosa, aquí como puedes ver, en el caso de Galaxy que pusimos null pues se ven esos guiones.
+
+Ok, está bien, porque nosotros mismos definimos eso con el operador Elvis, pero aquí te va mi propuesta.
+
+Puedes dejarlo así.
+
+Es válido o en su defecto, yo preferiría que si algo viene NULL sencillamente no se dibuje en Jetpack
+
+Compose.
+
+Y cómo logramos esto?
+
+Bueno, bastante sencillo.
+
+Bastaría con que pongamos un if.
+
+Miren, voy a copiar esto nada más para que quede respaldado.
+
+Lo voy a comentar y aquí arriba vamos a pegarlo, pero ya refactorizado.
+
+Básicamente voy a poner un if y voy a preguntar si device data posible null, punto color también posible
+
+null.
+
+Ah, no, no, aquí ya no, porque es la última propiedad.
+
+Sería así?
+
+Si esta propiedad es diferente de null, entonces ahora sí dibújame ese texto.
+
+Si no, pues sencillamente no hagas nada.
+
+Ok, Ven y sería la misma estructura acá.
+
+De hecho, creo que me saldría más fácil simplemente duplicar esto y cambiar la propiedad.
+
+Sería ya la capacidad y listo.
+
+Ok.
+
+Bueno, ahí está.
+
+Si vuelvo a ejecutar esto, vamos a notar que ahora aquellos dispositivos que no tengan esas propiedades
+
+sencillamente únicamente van a pintar su título como acá.
+
+Muy bien.
+
+Ya por último, solamente quiero despedirme con la parte del título, porque aquí tenemos un detalle
+
+en Mainscreen.
+
+Si subimos, vamos a darnos cuenta que el modifier está ocupándose únicamente en el texto.
+
+Ok?
+
+De momento se ve bien.
+
+Pero lo correcto en estas ocasiones es que el modifier que se recibe directamente desde el scaffold
+
+vale este que mandamos aquí con padding.
+
+Bueno que se vaya al contenedor principal, así como lo hicimos acá, que afectamos a Row por ser el
+
+principal.
+
+Bueno, aquí lo correcto sería que se modifier, se reciba en column.
+
+Ok?
+
+Y el texto ya tendría un modifier nuevo, así que vamos a ponerlo en mayúscula.
+
+De acuerdo.
+
+Bien, vuelvo a ejecutar.
+
+No tendría que haber un cambio, porque en este caso específico pues funciona de las dos formas, pero
+
+va a haber otros diseños donde ahí si o lo pones al contenedor principal o sencillamente tu diseño se
+
+va a ver mal.
+
+Bueno, pues podríamos dejarlo así ya.
+
+Lo último que se me ocurre, nada más es un pequeño espacio aquí en la parte vertical, porque creo
+
+que sí quedó muy pegado.
+
+Se nota mucho en el Galaxy.
+
+Entonces aquí lo que puedo decirle también es el tab de ocho DP.
+
+Ok, hoy le puse siete ocho de P.
+
+Y vara.
+
+Es decir, en la parte inferior también ocho de P.
+
+Ok, porque ocho de P.
+
+Bueno, porque si sumamos ocho de arriba y ocho de abajo van a ser 16.
+
+Entre uno y otro elemento.
+
+Vean, ahí está.
+
+Genial.
+
+Me parece mucho mejor, más entendible.
+
+Y bueno, pues esto únicamente son datos de prueba, ya que aquí en la MainActivity estamos pasando
+
+directamente un listado que creamos de forma provisional.
+
+Pero evidentemente para que la aplicación finalice estos datos tienen que venir de un Web service,
+
+el cual al inicio de este curso ya vimos para poder diseñar precisamente las clases de device y specs.
+
+Vale, bueno, no digo más con esto ahora sí terminamos y nos vemos en el siguiente tema.
+
+Vamos por la parte final de esta gran aplicación y me refiero al tema de Retrofit.
+
+El consumo de API REST de forma remota aquí en Android.
+
+Bien, para esto vamos a entrar a una URL.
+
+Yo la voy a buscar aquí para que veas, pero igual te la voy a dejar ahí como recurso.
+
+Voy a poner retrofit y con eso será suficiente.
+
+Miren, aquí está ya la página principal.
+
+Ok.
+
+Vamos a irnos a la parte donde dice Download y digamos esta es la línea más básica, vamos a copiarla.
+
+Digo, es la más básica porque como vamos a ver a continuación, necesitamos una extra.
+
+Bueno, vamos a ponerlo aquí en el archivo build.gradle que en su momento te expliqué al inicio que
+
+era justamente donde se agregaban las librerías.
+
+Bueno, pues es momento de agregar una extra, aparte de todas las que ya están por default y yo te
+
+recomiendo que agregues aquí entre la última que dice implementation y la primera que dice Testimplementation.
+
+Ahí haz un espacio Y pega también.
+
+Como recomendación, yo siempre le pongo aquí el nombre de la librería para que no se te olvide, retrofit
+
+y sepas exactamente cuáles son las líneas que afectan.
+
+Bueno, además de esta línea, que es la base del consumo de Web Services, lo que requerimos en esta
+
+parte de configuración es un complemento para trabajar con JSON, que de hecho aquí está.
+
+Mira JSON.
+
+Vale, en este caso solo me da aquí el paquete y con eso es suficiente.
+
+Vamos a copiar y acá yo puedo duplicar esto seleccionando y presionando Control D o Command D para Mac.
+
+Y lo que voy a reemplazar es esta parte.
+
+Vale?
+
+La versión es exactamente igual para la base como para el convertidor.
+
+Ahora aquí ya me está dando por default esta versión que sería la tres punto 1.0 guión snapshot.
+
+Si tú quieres ver cuál es la versión más estable o incluso alguna beta, lo que yo te puedo recomendar
+
+es que vayas al repositorio de Retrofit aquí mismo.
+
+En su página web tienen ese enlace y aquí puedes ver justamente cual es la más estable.
+
+Vean la tres punto 0.0 es la versión más reciente y estable.
+
+Aquí nos está dando una snapshot.
+
+Entonces yo siempre voy a preferir la estabilidad antes que la modernidad.
+
+Así que si me lo permites, yo voy a poner aquí la 300 que viene en el repositorio como la última estable.
+
+Ok.
+
+Bueno, te digo, yo te voy a dejar aquí también los enlaces, así que no te preocupes por esa parte
+
+y podríamos dejarlo así.
+
+O si también te preguntas por qué se ven diferentes a las de aquí arriba.
+
+Bueno, eso es porque ahora también se maneja el catálogo de librerías.
+
+Si quieres migrar a ello, simplemente haz clic encima después con Alt Intro y la primera opción que
+
+dice Reemplazar con la nueva.
+
+Con el nuevo catálogo de librerías para Retrofit vamos a decirle que sí y listo.
+
+Se marca en rojo, pero no te preocupes.
+
+Si entramos aquí.
+
+Mira, ya se agregó al final.
+
+Excelente.
+
+Le voy a dar aquí un salto de línea nada más para que se separe y se pueda visualizar mejor.
+
+La versión está acá arriba.
+
+Vean, también se agregó al final y podemos hacer lo mismo con el convertidor para JSON.
+
+Ok.
+
+Bien, regresamos.
+
+Vamos a verificar a dónde se fue.
+
+A ver, Converter JSON.
+
+Lo voy a mover acá abajo para que quede junto a la base de Retrofit y haré lo mismo en la parte de arriba.
+
+Ven.
+
+Cortar y pegar.
+
+Vale.
+
+De esta forma también será muy fácil que tú distingas cuáles son las del proyecto nativo y cuáles son
+
+las que tú has ido agregando.
+
+Bueno, independientemente de si migraste al catálogo de librerías o no, bueno, simplemente falta
+
+sincronizar Gradle para que esta librería ya se integre como tal en el proyecto.
+
+Muchas veces va a tener que descargar como tal, así que puede tardar un poco más.
+
+Y después simplemente va a desempaquetar y estará listo.
+
+Muy bien, está terminando.
+
+Vamos a ver si no marca ningún error.
+
+La sincronización?
+
+No, todo estuvo perfecto.
+
+De hecho, también puedes compilar nada más como para comprobar que esa librería que acabas de agregar
+
+no está afectando en nada al proyecto.
+
+Yo te recomiendo mucho este paso, porque muchas veces también podría pasar que tú agregas una librería
+
+muy nueva y que causa conflicto con alguna de las librerías que ya estaba.
+
+Entonces, antes de que sigas programando o que vayas a agregar más librerías y te puedas confundir,
+
+yo te digo agrega una por una, compila.
+
+Bueno, sincroniza, por supuesto, después compila y ya si todo sale bien vas por la siguiente.
+
+Una vez que ya tengas experiencia con las librerías, tú mismo vas a saber cuando puedan o no causar
+
+conflicto.
+
+Entonces simplemente es un consejo para cuando recién inicias en Android, vale?
+
+Bueno, pues eso sería todo.
+
+Con respecto a este tema, ya hemos agregado la librería correspondiente para consumir esos servicios
+
+web.
+
+
+Para esta clase vamos a configurar lo que es un servicio de retrofit para cada URL que vayamos a consumir.
+
+Deberíamos de construir por lo menos un servicio dentro de Android.
+
+En este caso, como recordarán, nosotros ya habíamos trabajado con esta API que yo les recomendé.
+
+Igualmente lo repito una vez más, si por alguna razón ya no estuviera disponible, yo te dejé también
+
+lo que es un recurso ahí con múltiples APIs que de igual forma tú puedes reutilizar para seguir este
+
+proyecto.
+
+Evidentemente cambiarán las estructuras o los nombres de las propiedades, pero en general todo va a
+
+funcionar exactamente igual.
+
+Bueno, entonces vamos a bajar aquí un poco más y justo aquí están los datos que nos importan.
+
+Tiene este listado de todos los objetos, Vale.
+
+Nos dice cómo solicitarlo a través de una URL y cuál es la respuesta.
+
+Nosotros ya trabajamos justamente en esta parte.
+
+Bueno, pues ahora vamos a trabajar en la solicitud.
+
+En este caso voy a copiar Cuál es esa URL que no es la misma de acá arriba?
+
+Puedes observar.
+
+Bean RESTful API Web.
+
+Mientras que acá es API RESTful API dev Diagonal Objects.
+
+Ok, bueno, pues ya que copiamos esa URL para la solicitud, vamos a ir acá en Android en nuestro paquete
+
+principal y vamos a hacer click derecho para crear una nueva clase, pero en esta ocasión va a ser de
+
+tipo Object.
+
+Aquí vamos a agregar las constantes que vayamos a utilizar dentro de nuestro proyecto.
+
+Vamos a poner constantes ok?
+
+Y dentro de este bloque de código vamos a definir nuestra primera constante, a la cual llamaré Base
+
+Guion bajo URL.
+
+Ok.
+
+Esto va a ser igual a entre comillas dobles y pegamos.
+
+Pero ahí nos quedaría porque la URL de la base únicamente debe llegar al dominio principal, incluyendo
+
+subdominios, por supuesto.
+
+Es decir, hasta aquí, todo lo que venga después va a ser parte de una ruta secundaria.
+
+En este caso es muy sencillo.
+
+Simplemente es Diagonal Objects.
+
+Bueno, vamos a cortar esa parte y a pegarlo acá debajo en otra constante a la cual llamaré Objects
+
+para respetar justamente esa dirección y le pondré path ok?
+
+Bien, igual a comillas dobles y pego.
+
+Excelente.
+
+Eso sería todo.
+
+Ahora ya tenemos, digamos, lo que vamos a consumir dentro de nuestro servicio web.
+
+El último paso en este sentido sería crear una interfaz para Retrofit.
+
+Elegimos Interface y le asignamos un nombre.
+
+Para esto yo siempre recomiendo que pongas el nombre del objeto y después la palabra service para esta
+
+aplicación.
+
+Estamos trabajando con dispositivos, así que pondré device y después service.
+
+Bien, en esta interfaz vamos a poner todos los métodos que vayamos a utilizar para este servicio web,
+
+que en este caso por temas de duración del curso, únicamente lo vamos a hacer con el primero, el listado
+
+de todos los objetos.
+
+Pero por supuesto, también podrías probar con diferentes.
+
+Aunque claro, algunos van a requerir unos temas extras avanzados.
+
+Pero bueno, concentrémonos en este primer caso, que es el más común, el más utilizado, que es simplemente
+
+consumir.
+
+Vamos a regresar aquí a Android Studio y vamos a poner el nombre del método.
+
+Para este caso sería un listado de todos los objetos, Así que voy a ponerle a esta función Get all
+
+objects, ok?
+
+Aquí si voy a respetar el nombre de acuerdo a lo que está en el servicio web.
+
+Igual si tú quieres ponerle aquí por ejemplo Get all device sería totalmente valido.
+
+Ok, de hecho lo voy a dejar así para que quede mucho más coherente en nuestro código de Kotlin.
+
+Bueno, en esta ocasión no vamos a cambiar nada.
+
+No hay ningún parámetro, por lo tanto lo dejo vacío y que nos va a devolver.
+
+Recordemos un arreglo de objetos tipo dispositivo.
+
+Entonces aquí le digo devuélveme un listado de tipo object, ok, perdón, Object device, perdón,
+
+perdón, me confundo porque el nombre no es el mismo que estamos utilizando con el que nosotros hemos
+
+creado acá.
+
+Pero bueno, ahora si ya quedó claro y como recomendación, aunque podría ser omitido, yo te recomiendo
+
+que aquí pongas antes de func la palabra suspend.
+
+Eso va a hacer que tu función ahora esté capacitada para trabajar con corrutinas de Kotlin.
+
+Este es un tema más avanzado, pero simplemente quiero que sepas que eso es para cuando una tarea puede
+
+pasar a segundo plano.
+
+Es decir, cuando estás ejecutando código de Kotlin va de forma síncrona, es decir, línea por línea,
+
+pero en ciertos procesos requerimos que se haga de forma asíncrona, es decir, en un subproceso, por
+
+ejemplo una consulta a la base de datos, la cual no sabe si va a tardar 50 milisegundos o si por el
+
+contrario podría tardar diez segundos, no se sabe.
+
+Entonces para ese tipo de cosas es mejor trabajar con corrutinas de Kotlin.
+
+Por eso esa palabra que ponemos acá de suspendido.
+
+De acuerdo?
+
+Bueno, sin entrar en más temas avanzados, simplemente te lo pongo y continuamos.
+
+Ahora ya tenemos nuestro método, hay que configurarlo para que se prepare con retrofit y para eso tenemos
+
+que primero indicar cuál es la notación correspondiente, es decir, aquí a la izquierda, tú ves que
+
+hay unas palabras que dicen get post put patch, delete.
+
+Bueno, esto tiene que ver con el tipo de método que vas a ejecutar para consumir ese servicio web.
+
+En este caso sería GET, así que vamos a ponerle esa anotación.
+
+Con retrofit ponemos arroba y después GET.
+
+Así, en mayúsculas.
+
+Y mira, la primera opción es la que viene de Retrofit, la elegimos y listo.
+
+Ahora dentro de paréntesis vamos a configurarle lo que es la ruta complementaria.
+
+Retrofit tendrá su lugar para que configuremos después lo que es la URL base, pero para los métodos
+
+tenemos se aplica que aplicar los complementos de las rutas, en este caso sería Object path.
+
+Ok, así que vamos a poner esto.
+
+Constants punto Object Path y listo, ahí quedó.
+
+Bien, con eso hemos terminado de configurar nuestro servicio aquí en Kotlin para Retrofit.
+
+Te veo en el siguiente tema para que comencemos con la configuración final y que ahora sí podamos ejecutarlo
+
+y verlo ya en tiempo real.
+
+Vamos a continuar ahora con la configuración de Retrofit.
+
+Para eso vamos a ubicarnos dentro de la actividad principal, en este caso la clase llamada MainActivity.
+
+Ok.
+
+Bueno, aquí es donde lanzamos nuestra vista de Compose.
+
+Vamos a prepararnos para justamente enviarle un arreglo de dispositivos.
+
+Para esto, aquí arriba voy a crear una variable que está especialmente diseñada para Compose.
+
+Vamos a poner var device by remember ok?
+
+Observa como no se declara exactamente igual que cualquier variable de Kotlin y adentro vamos a poner
+
+de hecho un mutablestateof porque compose funciona a través de estados.
+
+Vale?
+
+Y ahora sí, dentro de ese estado podemos definirle el tipo Para nuestro caso sería un listado de dispositivos.
+
+Ponemos list of y luego con los símbolos de mayor que y menor que vamos a especificar el tipo.
+
+En este caso device.
+
+Bien, ahora si te marca un error en byte justo como a mi, es porque faltan importaciones ahí mismo.
+
+No te despegues, simplemente pones al intro y se añade la importación correspondiente a getValue.
+
+Ahora falta una más que es para Setvalue y listo.
+
+Una vez que las agregamos ya no marca error para que no quede duda.
+
+Esas importaciones son las que tenemos aquí, ok?
+
+Androidx, Compose Runtime, Setvalue y getValue.
+
+Ok.
+
+Bueno, en lugar de pasar aquí este listado que fue provisional nada más para hacer la prueba, vamos
+
+a indicarle device es igual a device.
+
+Ok, nuestra variable para compose y listo.
+
+Lo último que nos faltaría sería enlazar esta variable con el consumo de un servicio web a través de
+
+Retrofit.
+
+Para eso vamos a crear un método aquí.
+
+Ojo, vean donde dice onCreate.
+
+Al final voy a ubicar ese cierre y debajo, ahora sí voy a crear una nueva función.
+
+Vamos a poner Private Fun y después Get Device.
+
+Ok, ese es el nombre de nuestra función.
+
+Aquí vamos a trabajar con algo llamado función de orden superior.
+
+Este es un tema un poco más avanzado de Kotlin, pero no te preocupes, yo te voy a explicar rápidamente
+
+cómo es que funciona.
+
+Primero necesitamos el nombre de la función.
+
+Yo le voy a poner Onresult.
+
+Vale, después vamos a especificarlo con Kotlin, que es justamente una función de orden superior.
+
+Para eso ponemos dos puntos como si especificamos el tipo después paréntesis porque es una función y
+
+finalmente aquí no va a retornar nada directamente, pero es necesario especificarle con Kotlin que
+
+es un UNIT.
+
+Vale.
+
+Bueno, salimos y listo, ya no marca error.
+
+Ahora, opcionalmente también las funciones de primer orden pueden tener aquí un valor de retorno que
+
+para nuestro caso sí es necesario porque necesitamos esa lista de elementos que vamos a consumir a través
+
+de nuestro servicio web.
+
+Y esa lista, como recordarás aquí en la interfaz en el servicio de Retrofit, tiene que ser de tipo
+
+List device.
+
+Ok?
+
+Bueno, vamos para acá y ponemos list del tipo Device, ok?
+
+Bien, ya hemos definido, digámoslo así, la estructura, la carcasa de nuestra función.
+
+Ahora toca ir por retrofit.
+
+Vamos a crear una variable llamada retrofit que sea igual a Retrofit.
+
+No le puse la F retrofit.
+
+Ahora sí, Punto Builder.
+
+Ok, ponemos aquí nueva instancia con paréntesis y continuamos con su configuración.
+
+Vamos a poner un punto y agregar base URL.
+
+Ahora sí tiene sentido que yo haya creado este archivo de constantes, cierto?
+
+Bueno, te dije que ya tendrías un momento retrofit para consumir justamente esa base.
+
+En fin, vamos aquí a poner constants punto y ponemos base URL.
+
+Perfecto, ya quedó.
+
+Ahora con esto Retrofit ya sabe dónde va a consumir, pero lo que no sabe es si tiene o no que convertirlo.
+
+En este caso sí es necesario porque por default ese servicio web nos da una respuesta en JSON, pero
+
+queremos trasladarlo al lenguaje de Kotlin y que se haga un arreglo de dispositivos.
+
+Entonces vamos a poner aquí una configuración extra que sería Add Converter Factory y después una nueva
+
+instancia de JSON Converter Factory Jsonconverter Factory.
+
+Ahí está.
+
+No lo había escrito bien.
+
+Y ponemos Create.
+
+Genial.
+
+Ya quedó.
+
+Lo último que nos quedaría como este es un builder, sería decirle que se construya punto build y listo,
+
+Ya tenemos.
+
+Ahora sí esa configuración base de retrofit.
+
+Lo último que queda para consumirlo es enlazarlo con nuestro servicio.
+
+Así que voy a crear aquí una variable para que también quede muy claro a la cual llamaré Service y esta
+
+va a ser igual a Retrofit la configuración que acabamos de hacer.
+
+Punto create ok.
+
+Aquí voy a borrar el tipo, no será necesario porque lo vamos a poner dentro del constructor, para
+
+nuestro caso es Device Service.
+
+Ok?
+
+Pero vamos a ponerlo como clase, así que ponemos dos veces dos puntos y elegimos class punto Java.
+
+Ahí está.
+
+Con eso queda configurado construido nuestro servicio.
+
+Y el último paso, que sería bueno, pues ejecutarlo.
+
+Pero también recordemos algo muy importante yo te dije en su momento que pusieras la palabra suspend,
+
+esto es para que sea compatible con corrutinas y de esa forma no tengamos ningún problema en consumir
+
+un servicio en segundo plano.
+
+Bueno, pues justamente aquí es donde toma la importancia y para que pueda funcionar Android ya te incluye
+
+una corrutina que está enlazada con el ciclo de vida de la aplicación, es decir, que funciona de acuerdo
+
+al estado o la parte del estado en la cual se encuentra tu aplicación.
+
+Si está iniciando, si está rotando, si está en pausa, si se ha minimizado.
+
+Todo eso tiene que ver con el ciclo de vida.
+
+Así que vamos a poner entonces lifecycle y vamos a elegir la que está abajo.
+
+Lifecyclescope Vale?
+
+Esta ya es una corrutina, como te decía.
+
+Y ahora ponemos simplemente launch para que se lance ese subproceso.
+
+Y ahora si ponemos esa tarea que hemos configurado para nuestro caso sería ejecutar el servicio.
+
+Voy a crear una variable más para que quede bien claro todo Device.
+
+Va a ser igual a service Punto Getall device Ok.
+
+Si tú ejecutas esta línea fuera de una corrutina lo voy a hacer nada más.
+
+Como ejemplo te va a marcar error.
+
+Vale?
+
+Bueno, regresamos esto como estaba y continuamos.
+
+Ahora sí, ya que tenemos los dispositivos para este punto, nosotros ya tendríamos todo este arreglo
+
+convertido en objetos de Kotlin.
+
+Lo último que queda es devolverlo y lo vamos a devolver dentro de esa función que creamos acá arriba,
+
+que es un poco más avanzada, pero su forma de utilizar es bastante sencilla.
+
+Simplemente ponemos un result y entre paréntesis pasamos los dispositivos y listo.
+
+Ha quedado todo terminado.
+
+Lo último que faltaría sería mandar a llamar o utilizar esta función en alguna parte.
+
+Donde lo podemos hacer?
+
+Pues aquí mismo, después de haber declarado esa variable para nuestros dispositivos que sea compatible
+
+Con Jetpack Compose.
+
+Bueno, vamos a ejecutar este método llamado Get Device, ok, el cual retorna unos dispositivos y sencillamente
+
+vamos a asignarlo.
+
+Bueno, para que no quede con el mismo nombre voy a renombrar esto como result, ok?
+
+Y así sería mucho más fácil distinguir device es igual a result.
+
+Ok, muy entendible, cierto?
+
+Bueno, pues ya casi termina.
+
+Digo ya casi porque falta una última configuración, es más, vamos a ejecutarlo o yo lo voy a ejecutar,
+
+tú no lo ejecutes, simplemente observa lo que va a pasar, va a marcar un error, no va a funcionar.
+
+A pesar de que ya tenemos toda la configuración construida.
+
+Esto no va a funcionar porque Android necesita que se otorguen permisos en ciertas ocasiones.
+
+Mira, como puedes ver, se intentó lanzar pero no se pudo.
+
+Por qué?
+
+Bueno, porque aquí falta un permiso.
+
+No tenemos acceso a internet por default.
+
+Para esto vamos a abrir la carpeta App manifest y a encontrar el archivo Android Manifest.
+
+Vamos a hacer doble clic y aquí vamos a otorgarle el permiso.
+
+Le decimos uses permission.
+
+Vale?
+
+Y buscamos internet.
+
+Ok, cerramos y listo.
+
+Con esta línea XML.
+
+Ahora si nuestra aplicación habría solicitado el permiso para utilizar Internet.
+
+Y miren, con esa simple configuración voy a volver a ejecutar la aplicación.
+
+Y ahora sí va a funcionar.
+
+Observa que comprar y listo.
+
+Todo el listado de dispositivos que tenemos ahí están aquí.
+
+Genial, genial.
+
+Bueno, pues con esto estaríamos concluyendo ya básicamente nuestra aplicación.
+
+Claro que podemos mejorarla mucho más.
+
+Podemos cambiar el aspecto.
+
+Podríamos poner una barra de progreso o incluso adaptarlo para que acepte más características a visualizar,
+
+no solamente color y capacidad.
+
+En fin, tenemos un mundo de posibilidades que podemos hacer a partir de ahora.
+
+Pero lo prometido es deuda.
+
+Con esto ya eres capaz de crear tu primera aplicación de Android avanzada y totalmente profesional consumiendo
+
+servicios web remotos dentro de tu dispositivo.
+
+Pero aún no nos despedimos.
+
+Te voy a ver en la siguiente clase para que te ponga un reto final y de esa forma tú puedas evaluar
+
+y practicar justamente tus capacidades.
+
+Yo te puedo explicar todo, pero si tú al final no tienes ninguna práctica, tampoco estarás aprendiendo
+
+muy bien que digamos.
+
+Cierto?
+
+Bueno, pues no digo más.
+
+Entonces con esto ahora sí terminamos este tema y nos vemos en el siguiente.
+
+
+Tarea: Reto de Diseño con Jetpack Compose
+40 minutos para finalizar
+14 soluciones del estudiante
+Pongamos a prueba tus conocimientos para enriquecer la vista de tu app construida con Jetpack Compose.
+
+
+Tarea: Reto de Consumo de Web Services
+60 minutos para finalizar
+8 soluciones del estudiante
+Refuerza tus habilidades y evalúa tu nivel de conocimiento con este reto sobre el consumo de servicios web con Retrofit.
+
+
+
+Quiero aprovechar al máximo 02:00 del curso, así que todavía nos queda un pequeño espacio para una
+
+clase extra.
+
+Una clase bonus.
+
+Qué te parece si ahora aprendemos a mostrar justamente algún elemento que indique que está cargando
+
+esa información, ya que actualmente cuando ejecutamos nuestra aplicación vamos a darnos cuenta de que
+
+aquí, al cargar los dispositivos, sencillamente hay una pequeña pausa.
+
+Miren, ahí está.
+
+Y de pronto aparecen los datos.
+
+Bueno, está bien, funciona.
+
+Pero sería mejor si nosotros pudiéramos darle al usuario un pequeño indicio de que está cargando.
+
+Bueno, vamos a ocultar esto y a continuar.
+
+Voy a colocar aquí dentro del scaffold donde tenemos nuestra vista inicial.
+
+Y si bien esto lo podríamos hacer de múltiples formas, yo voy a tratar de reutilizar lo más posible
+
+lo que ya hemos aprendido para que por una parte reforcemos los conocimientos y por otra no perdamos
+
+más tiempo.
+
+Bueno, pues vamos allá.
+
+Voy a cortar ese código y en su lugar voy a meter un column.
+
+Ok, bien.
+
+Pego y debajo voy a meter un nuevo elemento, un Circular Progress Indicator.
+
+Este ya viene predefinido, prediseñado en Jetpack Compose.
+
+Es un componente que nos va a ser de utilidad justamente para esto.
+
+Miren, por el simple hecho de incluirlo, vamos a ver cómo se comporta la aplicación ahora.
+
+Miren, ahí está.
+
+Funciona, pues, entre comillas, porque vean, a pesar de que tiene esa apariencia de que dices Bueno,
+
+desapareció.
+
+Realmente se quedó aquí debajo.
+
+Si yo limitara la respuesta, por ejemplo, aquí, esto ustedes no lo hagan.
+
+Simplemente es para demostración.
+
+Voy a copiar y pegar en lugar de el Onresult device.
+
+Voy a poner rápidamente on result y pego.
+
+Vale.
+
+Por qué hago esto?
+
+Bueno, porque quiero que vean como ese progress sigue existiendo.
+
+Miren.
+
+Ahí está.
+
+Vale.
+
+Entonces no podemos arriesgarnos a eso, a que nuestro listado sea menor y se siga visualizando.
+
+Tenemos que ocultarlo sí o sí.
+
+Además, también descentralizarlo, ya que aquí vamos a hacer algo muy parecido a lo que vimos en su
+
+momento acá con el Row.
+
+Es decir, vamos a centralizar, solo que en esta ocasión como estamos con el column lo haremos de forma
+
+horizontal, vale?
+
+Horizontal alignment y vamos a ponerle ahora center horizontal, vale?
+
+Bueno, pero como te decía, tenemos que ocultarlo sí o sí.
+
+Entonces, cuál va a ser nuestra solución?
+
+Aunque hay múltiples formas de hacerlo.
+
+Yo te propongo esta.
+
+Vamos a refactorizar lo que ya tenemos para empezar aquí le voy a decir que posiblemente es un null.
+
+Ok.
+
+Bueno, y acá antes de invocar esto vamos a pasar la definición de device.
+
+Voy a copiar y pegar.
+
+Bueno, ya sería una variable ahora.
+
+Y esta también sería de tipo list, ok device y posiblemente null.
+
+Vale.
+
+De hecho su valor inicial sería así un null.
+
+Más adelante, ya aquí, cuando hacemos la consulta, el consumo del servicio web podrá adquirir el
+
+valor de el servidor OK y después se devolverá.
+
+Pero lo voy a seguir dejando así nada más para que veamos como si desaparece ese progreso.
+
+Ahora tenemos que refactorizar también esta parte, ya que aquí posiblemente es null.
+
+Entonces hay que verificar, decimos si el resultado es diferente de null.
+
+Bueno, entonces ahora sí Asígnalo a Device.
+
+Vale.
+
+Si no, pues no hagas nada.
+
+Y para poder ocultar este progreso, vamos a requerir otro estado para Compose.
+
+Aquí le voy a poner Isloading.
+
+Ok.
+
+Bien.
+
+Igualmente.
+
+Va a ser By Remember porque es un estado para Jetpack Compose.
+
+Mutablestateof.
+
+Pero ahora necesitamos un booleano.
+
+Así que voy a poner como valor inicial falso.
+
+Ok.
+
+No está cargando.
+
+Y aquí vamos a poner un if.
+
+Voy a preguntar si isloading únicamente cuando esté cargando.
+
+Quiero que lo muestres.
+
+Vale.
+
+Bueno, de hecho, aquí sería por default en True.
+
+Porque cuando recién se lanza la aplicación, quiero que esté cargando.
+
+Y una vez que tengamos la respuesta aquí, independientemente de si fue o no null, ahora si Isloading
+
+debe de pasar a falso para que se oculte.
+
+Vamos a ejecutar y veamos como se comporta nuestra aplicación.
+
+Ok, listo.
+
+Comenzó a cargar y una vez que finalizó se oculta.
+
+Perfecto!
+
+Ahora si voy a borrar este código innecesario que únicamente era para la prueba y en su lugar.
+
+Bueno, sería básicamente lo que teníamos aquí arriba comentado.
+
+Cierto?
+
+Lo restauró.
+
+Vuelvo a ejecutar la prueba y tiene que funcionar prácticamente.
+
+Con eso habremos acabado esta clase.
+
+Bonus.
+
+A ver.
+
+Ahí está.
+
+Excelente.
+
+Y ahora tenemos la seguridad de que si se está ocultando ya nada más me gustaría complementar esta clase
+
+con un detalle extra y es que todo funciona.
+
+Si, pero estamos en el caso donde todo sale bien.
+
+Es decir, aquí estamos consultando nuestro servicio web.
+
+Tenemos la respuesta y devolvemos el resultado.
+
+Pero qué pasaría si existiera algún error?
+
+Bueno, hay una forma de provocar esto fácilmente con las corrutinas.
+
+Me voy a colocar aquí al inicio y voy a poner la palabra this.
+
+Ok, con esto hacemos referencia a la corrutina que se está ejecutando y le voy a decir cancela.
+
+Vale.
+
+Si pasa algún tipo de error.
+
+Bueno, las corrutinas suelen cancelarse.
+
+Por lo tanto, sería una buena forma de comprobar qué tan fiable es nuestra aplicación ante esos casos.
+
+Antes de que pudiera traer la respuesta del servidor y por supuesto, ejecutarse on result.
+
+Bueno, pues vamos a ejecutar y comprobémoslo.
+
+Miren, comienza a cargar.
+
+Y qué pasa?
+
+Bueno, que ya nunca tiene respuesta.
+
+Cómo se canceló?
+
+Aquí jamás se ejecuta un result y por lo tanto nuestro progreso queda ahí de forma interminable.
+
+Por suerte, Kotlin nos ofrece múltiples formas de controlar este tipo de escenarios y una muy sencilla
+
+ya que estamos con las corrutinas y así no tenemos que meter temas nuevos aquí.
+
+Al final voy a poner punto Invoke Oncompletion.
+
+Pero voy a elegir la segunda opción, la que tiene estas llaves.
+
+Vale para que se genere ese bloque de código.
+
+Y ahora sí que lo que voy a hacer, bueno, trasladar esta línea acá abajo, porque bueno, independientemente
+
+de si fue o no exitosa, la Corrutina va a invocar un método para notificar que ya se terminó y por
+
+lo tanto es el punto ideal para devolver la respuesta, independientemente de que haya quedado como
+
+null o que sí haya traído un resultado del servidor.
+
+En esta ocasión, una vez más, voy a dejar esta línea para forzar ese error.
+
+Bueno, no es un error como tal, porque lo estamos controlando nosotros, verdad?
+
+Pero bueno, ustedes me entienden.
+
+Vamos a ver.
+
+Ok, perfecto.
+
+Como puedes ver ahí, en esta ocasión fue demasiado rápido y ni siquiera hubo tiempo de visualizar el
+
+progreso.
+
+Pero el punto es que terminó.
+
+Por otro lado, si comentamos esto y dejamos que ahora sí tenga el flujo normal, bueno, veremos el
+
+progreso e independientemente del resultado, se va a invocar esta función.
+
+Ahí lo tenemos.
+
+Excelente.
+
+Muy bien, pues con esto ahora sí finalizamos la clase.
+
+Por supuesto que podríamos implementar muchas cosas más dentro de esta aplicación, pero lamentablemente
+
+el tiempo se nos acaba, así que no queda más que despedirnos por ahora, pero espero que algún día
+
+nos veamos en otra clase.
+
+Felicidades.
+
+Llegaste hasta el final de este curso y acabas de crear tu primera aplicación Android profesional.
+
+Tienes mi admiración por eso.
+
+Tómate un momento para sentirte orgulloso de lo que lograste.
+
+No todos se atreven a dar este primer paso, pero tú sí.
+
+Tú lo hiciste en muy poco tiempo.
+
+Aprendiste a usar Kotlin, Jetpack, Compose y Retrofit, las mismas herramientas que usan los desarrolladores
+
+profesionales hoy en día.
+
+Así que ya no eres un principiante que solo mira desde afuera.
+
+Ahora formas parte de quienes crean la tecnología.
+
+Este curso fue solo el comienzo.
+
+Si disfrutaste este proceso y quieres seguir creciendo, te invito a continuar tu camino conmigo en
+
+mi curso completo.
+
+Domina Android con Kotlin Compose e Inteligencia Artificial.
+
+Ahí podrás dar el siguiente paso profundizar en los temas, crear aplicaciones aún más avanzadas y seguir
+
+desarrollando esa habilidad que hoy ya demostraste tener.
+
+Aprender mientras creas.
+
+Recuerda, cada línea de código que escribas te acerca más a tu futuro como desarrollador.
+
+En mi canal de YouTube encontrarás más cursos y tutoriales gratuitos en Udemy.
+
+También tienes otros cursos gratis que puedes aprovechar desde ahora.
+
+Y si algún día quieres dar ese salto más profundo y convertirte en un profesional, te invito a mis
+
+cursos premium donde exploramos Kotlin, Android Compose, inteligencia artificial, testing, arquitecturas
+
+y mucho más.
+
+Sigue practicando, sigue aprendiendo y sobre todo, nunca dejes de creer en ti.
+
+Muchas gracias por haberme acompañado en este curso, de verdad que fue un honor para mí compartir este
+
+primer paso contigo.
+
+Y si quieres que sigamos en contacto, puedes añadirme en LinkedIn o seguirme en Facebook, YouTube.
+
+X Ahí siempre comparto contenido extra, consejos y ofertas especiales.
+
+Espero vernos pronto.
+
+Te mando un fuerte abrazo.
+
+
